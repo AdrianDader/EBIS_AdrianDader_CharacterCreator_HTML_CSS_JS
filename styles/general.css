@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Tipografia generica -------------------------- */ 
+
+body { 
+    font-family: "Anek Latin", serif;
+}
+
+
+
+/* form basic layout ------------------ */
+
+.my-form {
+    display: grid;
+}
+
+
+/* button styles ---------------------------------- */
+
+
+.btn {
+    cursor: pointer;
+    background: none;
+	color: inherit;
+	border: none;
+}
+
+.btn__black{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1E1E1E;
+    padding: 1rem 2rem;
+    border-radius: .6rem;
+    transition: background-color 0.10s ease;
+    transition: padding 0.40s ease;
+}
+
+.btn__yellow{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1E1E1E;
+    background-color: #DB9900;
+    padding: 1rem 2rem;
+    border-radius: .6rem;
+    transition: background-color 0.10s ease;
+    transition: padding 0.40s ease;
+}
+.btn__grey{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1E1E1E;
+    background-color: #9A9A9A;
+    padding: 1rem 2rem;
+    border-radius: .6rem;
+    transition: background-color 0.10s ease;
+    transition: padding 0.40s ease;
+}
+
+
+.btn__black:hover {
+    color: #1E1E1E;
+    padding: 1rem 3rem;
+    background-color: #ffffff;
+}
+
+.btn__black:active {
+    
+    background-color: #444444;
+}
+
+
+.btn__yellow:hover{
+    color: #fff;
+    background-color: #1E1E1E;
+    padding: 1rem 3rem;
+}
+
+
+.btn__yellow:active {
+    
+    background-color: #444444;
+}
+
+.btn__grey:hover{
+    color: #fff;
+    background-color: #404040;
+    padding: 1rem 3rem;
+}
+
+
+.btn__grey:active {
+    
+    background-color: #747474;
+}
+
+.btn__max-width {
+    min-width: 100%;
+}
+
+/* TEXT ----------------------- */
+
+.section__title {
+    font-size: 2.5rem;
+}
+
+.section__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+/* TEXT FORM --------------------------*/
+
+
+.form-label__text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+
+input, textarea , select {
+    /* max-width: 28rem;
+    min-width: 30rem; */
+    /* max-height: 10rem; */
+    box-shadow: 0px 0px 44px -11px rgba(0, 0, 0, 0.52);
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #1e1e1e4e;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 8rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #DB9900;
+    background-color: #fff6e2;
+}
+
+
+.form-label__btn {
+
+    font-size: 1.5rem;
+    box-shadow: none;
+    font-weight: 700;
+    color: #1E1E1E;
+    background-color: #DB9900;
+    padding: 1rem 2rem;
+    border-radius: .6rem;
+    transition: background-color 0.10s ease;
+    transition: padding 0.40s ease;
+
+}
+
+.form-label__btn:hover {
+
+    color: #fff;
+    background-color: #1E1E1E;
+    padding: 1rem 3rem;
+
+}
+
+
+
+/* transition scale -------------------------------- */
+
+.transition-scale{
+    scale: .9;
+    transition: scale 0.50s ease;
+}
+
+.transition-scale:hover {
+    scale: 1;
+}
+
+
+/* menú hamburguesa ---------------------------- */
+
+.menu-hamburguesa {
+    display: none!important;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .nav-principal {
+        display: none;
+    }
+
+    .menu-hamburguesa {
+        display: block!important; 
+    }
+}
+
+/*sticky header -----------------------------------*/
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* Nueva clase que se agregará con JavaScript */
+
+.header-scrolled{
+    background-color: #1E1E1E;
+}
+.header-scrolled__text{
+    color: white!important; /* Color más oscuro cuando hay scroll */
+}
+
+
+
+
+
+/* span styles -------------------------*/
+
+.span-text__yellow > a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #DB9900;
+    
+}
+.span-text__yellow > a:hover {
+    
+    text-decoration: none;
+    font-weight: 800;
+    color: #1e1e1e;
+    
+}
+
+.span-text__white {
+
+    font-weight: 800;
+    color: #ffffff;
+}

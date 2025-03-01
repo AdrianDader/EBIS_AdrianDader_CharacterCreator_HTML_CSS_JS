@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quienes somos</title>
+    <!--GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--END GOOGLE FONT-->
+    <link rel="stylesheet" href="./../styles/faq.css" />
+    <link rel="stylesheet" href="./../styles/footer.css" />
+    <link rel="stylesheet" href="./../styles/header_ham_menu.css" />
+    <link rel="stylesheet" href="./../styles/header.css" />
+    <link rel="stylesheet" href="./../styles/general.css" />
+  </head>
+  <body>
+<!--HEADER-->
+<header id="headerPrincipal" class="header-principal">
+  <h1 class="cc__logo transition-scale">
+    <a id="headerPrincipalText" href="./../index.html">
+      <span class="cc__Yellow">Character</span> Creator
+    </a>
+  </h1>
+  <nav class="nav-principal" aria-label="Menú principal">
+    <ul class="menu__list">
+      
+      <li id="menuCrear" class="menu__item transition-scale"><a href="./create.html">Crear</a></li>
+
+      <li id="menuFAQ" class="menu__item transition-scale"><a href="./faq.html">FAQ</a></li>
+      <li id="menuQuienesSomos" class="menu__item transition-scale"><a href="./who-we-are.html">Quienes somos</a>
+        
+      </li>
+      <li id="menuContact" class="menu__item transition-scale"><a href="./contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <!--HAM MENU-->
+  <nav role="navigation">
+    <div id="menuToggle" class="menu-hamburguesa">
+      <input type="checkbox" id="menuCheckbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <li>
+          <label for="menuCheckbox"><a href="./create.html">Crear</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="./who-we-are.html">Quienes somos</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="./faq.html">FAQ</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a href="./contact.html">Contacto</a></label>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- END HAM MENU-->
+  <a id="scroll"></a>
+  <!-- Marcador para activar el target -->
+</header>
+<!-- END HEADER-->
+
+    <!--MAIN-->
+
+    <section class="section-faq">
+    <div class="faq__wrapper">
+      <h2 class="section__title">FAQ</h2>
+        <div class="accordion__wrapper">
+          <button class="accordion section__text" style="font-weight: 600;">¿Qué hace esta aplicación?
+          </button>
+          <div class="panel">
+          <p class="section__text" >Nuestra aplicación permite generar perfiles de personas ingresando datos en un formulario. Puedes agregar información como nombre, edad, ocupación y otros detalles para crear registros personalizados.</p>
+          </div>
+      
+          <button class="accordion section__text" style="font-weight: 600;">¿Necesito crear una cuenta para usarla?
+          </button>
+          <div class="panel">
+            <p class="section__text">No, puedes utilizar la aplicación sin registrarte. Sin embargo, si deseas guardar y gestionar múltiples perfiles, recomendamos crear una cuenta para acceder a funciones avanzadas.</p>
+          </div>
+      
+          <button class="accordion section__text" style="font-weight: 600;">¿Puedo exportar los datos generados?
+          </button>
+          <div class="panel">
+            <p class="section__text" >Sí, la aplicación permite exportar los perfiles generados en formatos como PDF o CSV, facilitando su uso en otros sistemas o bases de datos.</p>
+          </div>
+          <button class="accordion section__text" style="font-weight: 600;">¿Es segura la información que ingreso?
+          </button>
+          <div class="panel">
+            <p class="section__text" >Sí, la seguridad de tus datos es una prioridad. No compartimos ni almacenamos tu información sin tu consentimiento, y utilizamos cifrado para proteger la privacidad de los datos ingresados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--END MAIN-->
+
+    <!-- FOOTER-->
+    <footer Id="footerPrincipal" class="footer-principal">
+      <div class="footer-principal__wrapper">
+        <div class="footer__description">
+          <h3 class="footer__title">Character creator</h3>
+          <h4 class="footer__subtitle">by Adrian Dader</h4>
+          <p class="footer__text">
+            Este generador de personajes ha sido desarrollado para facilitar la
+            creación de historias y personajes únicos. Diseñado para escritores,
+            jugadores de rol y creativos, permite construir cartas con
+            descripciones detalladas y un diseño atractivo.
+          </p>
+          <p class="footer__text">
+            Proyecto realizado para el centro de estudios
+            <span class="span-text__white">EBIS Business School</span>, con el
+            objetivo de fomentar la creatividad y la narrativa interactiva.
+          </p>
+        </div>
+        <div class="footer-links__wrapper">
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Servicios</h4>
+            <p><a href="" class="footer__text">Instalación y Configuración</a></p>
+            <p><a href="" class="footer__text">Desarrollo de Software</a></p>
+            <p><a href="" class="footer__text">Reparación de Dispositivos</a></p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Empresa</h4>
+            <p><a href="" class="footer__text">Nuestra Historia</a></p>
+            <p><a href="" class="footer__text">Equipo y Cultura</a></p>
+            <p><a href="" class="footer__text">Opiniones de Clientes</a></p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Soporte</h4>
+            <p><a href="" class="footer__text">Centro de Ayuda</a></p>
+            <p><a href="" class="footer__text">Garantía y Devoluciones</a></p>
+            <p><a href="" class="footer__text">Seguridad y Privacidad
+
+            </a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--END FOOTER-->
+
+    <!--SCRIPT-->
+    <script src="./../js/dist/faq.js"></script>
+    <script src="./../js/dist/header_submenu.js"></script>
+  </body>
+</html>

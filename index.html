@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!--GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--END GOOGLE FONT-->
+
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/header_ham_menu.css" />
+    <link rel="stylesheet" href="./styles/header_submenu.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/cookies.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+
+    <header id="headerPrincipal" class="header-principal">
+      <h1 class="cc__logo transition-scale">
+        <a id="headerPrincipalText" href="./index.html">
+          <span class="cc__Yellow">Character</span> Creator
+        </a>
+      </h1>
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul class="menu__list">
+          <li id="menuComoFunciona" class="menu__item transition-scale">
+            ¿Cómo funciona?
+            <!-- SUB MENU-->
+            <div id="submenuList" class="submenu__wrapper">
+              <ol class="submenu__list">
+                <li class="submenu__item transition-scale">
+                  <a href="#section01Start"
+                    ><span class="submenu__numbers">1.</span> Para empezar</a
+                  >
+                </li>
+                <li class="submenu__item transition-scale">
+                  <a href="#section02Caracteristicas"
+                    ><span class="submenu__numbers">2.</span> Características</a
+                  >
+                </li>
+                <li class="submenu__item transition-scale">
+                  <a href="#section03Renderizar"
+                    ><span class="submenu__numbers">3.</span> Renderizar</a
+                  >
+                </li>
+              </ol>
+            </div>
+            <!-- END SUBMENU-->
+          </li>
+          <li id="menuFAQ" class="menu__item transition-scale">
+            <a href="./pages/faq.html">FAQ</a>
+          </li>
+          <li id="menuCrear" class="menu__item transition-scale">
+            <a href="./pages/create.html">Crear</a>
+          </li>
+          <li id="menuQuienesSomos" class="menu__item transition-scale">
+            <a href="./pages/who-we-are.html">Quienes somos</a>
+          </li>
+          <li id="menuContact" class="menu__item transition-scale">
+            <a href="./pages/contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!--HAM MENU-->
+      <nav role="navigation">
+        <div id="menuToggle" class="menu-hamburguesa">
+          <input type="checkbox" id="menuCheckbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./pages/create.html">Crear</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"><a>¿Cómo funciona?</a></label>
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="#section01Start">1. Para empezar</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="#section02Caracteristicas"
+                  >2. Características</a
+                ></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="#section03Renderizar">3. Renderizar</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./pages/who-we-are.html">Quienes somos</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./pages/faq.html">FAQ</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./pages/contact.html">Contacto</a></label
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END HAM MENU-->
+      <a id="scroll"></a>
+      <!-- Marcador para activar el target -->
+    </header>
+    <!-- END HEADER-->
+    <!-- MAIN-->
+    <main>
+      <section class="section-portada">
+        <div class="section-portada-info__wrapper">
+          <h2 class="portada__title transition-scale">
+            <span class="portada-title_yellow">Character</span><br />
+            creator
+          </h2>
+          <p class="portada__text">
+            Nuestra página permite crear cartas de personajes únicas con
+            historias envolventes, ideales para juegos de rol, escritura
+            creativa o coleccionismo. Con solo unos clics, genera un personaje
+            con nombre, apariencia, habilidades y un trasfondo narrativo
+            detallado.
+          </p>
+          <p class="portada__text">
+            Cada historia es original, adaptada al género y estilo que elijas,
+            desde fantasía épica hasta ciencia ficción. Además, puedes
+            personalizar atributos para que cada personaje encaje perfectamente
+            en tu mundo. ¡Explora infinitas posibilidades y da vida a tus
+            propias leyendas!
+          </p>
+          <p class="portada__text">
+            ¡Dale a
+            <span class="span-text__yellow"
+              ><a href="./pages/create.html" target="_blank">Crear</a></span
+            >
+            y empieza la aventura con nosotros!
+          </p>
+        </div>
+        <div id="portadaPhoto" class="section-portada-photo__wrapper">
+          <!--JAVASCRIPT-->
+        </div>
+      </section>
+      <section id="section01Start" class="section-start section__yellow">
+        <div class="section-start__wrapper">
+          <h3 class="section__title">
+            <span class="number">1 </span>Para empezar
+          </h3>
+          <p class="section__text">
+            Crear una carta de personaje comienza con una idea base: ¿qué tipo
+            de historia quieres contar? Puede ser un héroe legendario, un
+            villano astuto o un aventurero en busca de gloria. Definir su
+            propósito en la historia ayudará a dar coherencia a su diseño. Desde
+            la ambientación hasta la personalidad, cada detalle influye en la
+            experiencia narrativa. Una vez claro el concepto, se pasa a definir
+            sus características.
+          </p>
+          <img
+            class="section-start__img"
+            src="./content/img/home_personajes.jpg"
+            alt="Character Creator start"
+            width="100%"
+          />
+        </div>
+      </section>
+
+      <section id="section02Caracteristicas" class="section-caracteristicas">
+        <div class="section-caracteristicas__wrapper">
+          <h3 class="section__title">
+            <span class="number">2 </span>Definir características
+          </h3>
+          <div class="caracteristicas-01__wrapper">
+            <p class="section__text">
+              Las características de un personaje incluyen su apariencia,
+              habilidades y personalidad. Puedes elegir rasgos físicos como
+              altura, color de ojos y vestimenta, así como talentos especiales
+              que lo diferencien. Además, su trasfondo debe justificar sus
+              fortalezas y debilidades, creando un equilibrio narrativo. Un
+              pasado trágico puede explicar su motivación, mientras que un
+              entrenamiento riguroso puede justificar sus habilidades.
+            </p>
+            <img
+              src="./content/img/Home_Caracteristicas1.jpg"
+              alt="Character Creator start"
+              class="caracteristicas-01__img"
+            />
+          </div>
+          <div class="caracteristicas-01__wrapper">
+            <p class="section__text">
+              Cada personaje también debe tener objetivos y relaciones que lo
+              conecten con su mundo. ¿Tiene aliados o enemigos? ¿Qué lo impulsa
+              a actuar? Su historia debe incluir conflictos internos y externos
+              que lo hagan interesante. Estas características no solo lo hacen
+              único, sino que también le dan profundidad a sus acciones. Una vez
+              definido, el siguiente paso es llevarlo a la carta visualmente.
+            </p>
+            <img
+              src="./content/img/Home_Caracteristicas2.jpg"
+              alt="Character Creator start"
+              class="caracteristicas-01__img"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="section03Renderizar" class="section-render section__yellow">
+        <div class="section-render__wrapper">
+          <h3 class="section__title">
+            <span class="number">3 </span>Finalizar
+          </h3>
+          <img
+            src="./content/img/home_renderizar.jpg"
+            alt="Character Creator start"
+            width="100%"
+            class="render__img"
+          />
+          <p class="section__text">
+            El diseño de la carta transforma los rasgos en una imagen atractiva
+            y llamativa. Se eligen ilustraciones, fuentes y colores que
+            representen la esencia del personaje. Cada elemento visual debe
+            reforzar su identidad y encajar en la ambientación elegida. Además,
+            se organizan sus características de manera clara y legible para
+            facilitar su uso. Una carta bien diseñada no solo es estética, sino
+            también funcional.
+          </p>
+          <div class="btn-div">
+            <button type="button" class="btn btn__black">
+              <a href="./pages/create.html" aria-label="Crear personaje"
+                >Empezar a crear!</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="cookie-banner" class="section-cookies">
+        <p>
+          Si acepta, utilizaremos las cookies para personalizar el contenido y
+          los anuncios, proporcionar funciones de redes sociales y analizar
+          nuestro tráfico. También compartimos información sobre el uso de
+          nuestro sitio con nuestros socios de redes sociales, publicidad y
+          análisis. Todos los datos se procesan de acuerdo con nuestro
+          <a
+            class="cookies__link"
+            href="./pages/cookies.html"
+            target="_blank"
+            aria-label="Revisar política de privacidad"
+            >Aviso de Privacidad</a
+          >
+          que incluye nuestra Política de Cookies. Si no hace nada o hace clic
+          en "Rechazar todas las cookies", solo utilizaremos cookies que sean
+          "estrictamente necesarias". Puede cambiar su configuración de cookies
+          (haciendo clic en el icono de cookie) en cualquier momento y retirar
+          su consentimiento.
+        </p>
+        <button
+          id="accept-cookies"
+          class="btn btn-cookies__accept"
+          aria-label="Aceptar cookies"
+        >
+          Aceptar
+        </button>
+        <button
+          id="reject-cookies"
+          class="btn btn-cookies__reject"
+          aria-label="Rechazar cookies"
+        >
+          Rechazar
+        </button>
+      </section>
+    </main>
+
+    <!--END MAIN-->
+    <!-- FOOTER-->
+    <footer Id="footerPrincipal" class="footer-principal">
+      <div class="footer-principal__wrapper">
+        <div class="footer__description">
+          <h3 class="footer__title">Character creator</h3>
+          <h4 class="footer__subtitle">by Adrian Dader</h4>
+          <p class="footer__text">
+            Este generador de personajes ha sido desarrollado para facilitar la
+            creación de historias y personajes únicos. Diseñado para escritores,
+            jugadores de rol y creativos, permite construir cartas con
+            descripciones detalladas y un diseño atractivo.
+          </p>
+          <p class="footer__text">
+            Proyecto realizado para el centro de estudios
+            <span class="span-text__white">EBIS Business School</span>, con el
+            objetivo de fomentar la creatividad y la narrativa interactiva.
+          </p>
+        </div>
+        <div class="footer-links__wrapper">
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Servicios</h4>
+            <p>
+              <a href="" class="footer__text">Instalación y Configuración</a>
+            </p>
+            <p><a href="" class="footer__text">Desarrollo de Software</a></p>
+            <p>
+              <a href="" class="footer__text">Reparación de Dispositivos</a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Empresa</h4>
+            <p><a href="" class="footer__text">Nuestra Historia</a></p>
+            <p><a href="" class="footer__text">Equipo y Cultura</a></p>
+            <p><a href="" class="footer__text">Opiniones de Clientes</a></p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Soporte</h4>
+            <p><a href="" class="footer__text">Centro de Ayuda</a></p>
+            <p><a href="" class="footer__text">Garantía y Devoluciones</a></p>
+            <p><a href="" class="footer__text">Seguridad y Privacidad </a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--END FOOTER-->
+    <script src="./js/dist/index.js"></script>
+    <script src="./js/dist/cookies.js"></script>
+    <script src="./js/dist/stycky-header.js"></script>
+    <script src="./js/dist/header_submenu.js"></script>
+  </body>
+</html>

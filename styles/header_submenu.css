@@ -1,0 +1,46 @@
+.submenu__wrapper {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Lo posiciona debajo del elemento principal */
+    margin-top: .8rem;
+    margin-left: -.5rem ;
+    background: #fff; /* Fondo blanco */
+    list-style: none; /* Elimina los puntos */
+    padding: 1rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+
+    @media (max-width:1060px) {
+
+        margin-top: 1rem;
+    }
+
+
+
+
+}
+
+.submenu__wrapper li {
+    list-style: none;
+    padding: 10px; /* Espaciado entre opciones */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.submenu__wrapper li a {
+    text-decoration: none; /* Elimina subrayado */
+    color: #333; /* Color del texto */
+    display: block; /* Hace que el área clickeable sea todo el ancho */
+}
+
+.submenu__wrapper li:hover {
+    background: #f0f0f0; /* Fondo de opción al pasar el mouse */
+}
+
+.submenu__numbers {
+
+    color: #DB9900;
+}

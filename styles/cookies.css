@@ -1,0 +1,71 @@
+/* cookies banner --------------------------------------- */
+.section-cookies {
+    box-shadow: 0px 0px 44px -11px rgba(0, 0, 0, 0.52);
+    text-align: justify;
+
+    position: fixed;
+    background-color: #ffffff;
+    padding: 2rem;
+    bottom: 0;
+}
+
+.cookies__link {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.202);
+    color: #000000;
+    font-weight: 600;
+}
+
+.cookies__link:hover{
+    background-color: rgba(242, 194, 36, 0.202);
+
+}
+
+.btn-cookies__accept, .btn-cookies__reject{
+padding: 1rem 2rem;
+margin-top: 1rem;
+border-radius: .6rem;
+font-weight: 600;
+}
+
+.btn-cookies__accept{
+
+    background-color:#DB9900;
+
+}
+.btn-cookies__accept:hover{
+
+    background-color:#ffb300;
+
+}
+
+.btn-cookies__reject{
+    color: #fff;
+
+    background-color:#3a3a3a;
+}
+.btn-cookies__reject:hover{
+
+    background-color:#565656;
+}
+
+/*cookies page --------------------------------- */
+
+.section-cookies__page {
+}
+
+.cookies__wrapper {
+    text-align: justify;
+    padding: 4rem 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.cookies__wrapper > ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.cookies__navs:hover {
+    color: #DB9900;
+}

@@ -1,0 +1,69 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* El main se expande */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    margin: 0; /* Elimina márgenes predeterminados */
+  }
+
+
+/* layout -------------------------------------*/
+
+.section-faq{
+    margin: auto;
+    padding: 4rem;
+
+    @media (max-width:576px) {
+        padding: 2rem 0;
+    }
+}
+
+.accordion__wrapper{
+margin-top: .5rem;
+    
+}
+.faq__wrapper {
+    margin: auto;
+    max-width: 60rem;
+    padding: 0 2rem;
+    
+}
+/*accordion ----------------------------------*/
+
+.accordion {
+    background-color: #ffffff;
+    color: #070707;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 44px -11px rgba(0, 0, 0, 0.52);
+  }
+  
+  .active, .accordion:hover {
+    background-color: #DB9900;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #343434;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

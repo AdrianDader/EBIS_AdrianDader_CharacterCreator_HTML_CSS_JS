@@ -1,0 +1,102 @@
+/* layout */
+.section-create {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    
+    margin: 0;
+
+    @media (max-width:1060px) {
+        display: grid;
+        gap: 0;
+
+        margin: 0 auto;
+    }
+}
+
+.create__wrapper {
+    max-width: 30rem;
+    margin-bottom: 0;
+    /* margin: 0 auto; */
+    /* padding: 6rem 2rem; */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width:1060px) {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        margin-bottom: 2rem;
+
+    }
+}
+
+.form-flex__name-surname {
+    display: flex;
+     gap: 2.9rem; 
+}
+.form__name-surname > input {
+    margin: .5rem 0; 
+}
+
+.description__textarea {
+    height: 100%;
+}
+
+label#descriptionSubtitle {
+    display: ruby;
+}
+
+label#descriptionSubtitle > p {
+    font-size: 1.5rem;
+    color:#DB9900;
+    margin-left: .2rem;
+}
+
+/* card style */
+
+.card__wrapper {
+    background-color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 44px -11px rgba(0, 0, 0, 0.52);
+    text-align: justify;
+}
+
+.info__wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.card__basic-text {
+    display: grid;
+}
+
+.card__basic-img {
+    width: 35%;
+    height: 35%;
+    border-radius: 
+    .6rem;
+}
+
+.description__wrapper {
+    margin-top: 1rem;
+}
+
+.basic-text__info {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.basic-text__description {
+    margin-top: 1rem;
+}
+
+.btn__card {
+    margin-top: 1rem;
+}

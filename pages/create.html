@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+    <!--GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--END GOOGLE FONT-->
+    <link rel="stylesheet" href="./../styles/create.css" />
+    <link rel="stylesheet" href="./../styles/footer.css" />
+    <link rel="stylesheet" href="./../styles/header_ham_menu.css" />
+    <link rel="stylesheet" href="./../styles/header.css" />
+    <link rel="stylesheet" href="./../styles/general.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <header id="headerPrincipal" class="header-principal">
+      <h1 class="cc__logo transition-scale">
+        <a id="headerPrincipalText" href="./../index.html">
+          <span class="cc__Yellow">Character</span> Creator
+        </a>
+      </h1>
+      <nav class="nav-principal" aria-label="Menú principal">
+        <ul class="menu__list">
+          <li id="menuCrear" class="menu__item transition-scale">
+            <a href="./create.html">Crear</a>
+          </li>
+
+          <li id="menuFAQ" class="menu__item transition-scale">
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li id="menuQuienesSomos" class="menu__item transition-scale">
+            <a href="./who-we-are.html">Quienes somos</a>
+          </li>
+          <li id="menuContact" class="menu__item transition-scale">
+            <a href="./contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!--HAM MENU-->
+      <nav role="navigation">
+        <div id="menuToggle" class="menu-hamburguesa">
+          <input type="checkbox" id="menuCheckbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./create.html">Crear</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./who-we-are.html">Quienes somos</a></label
+              >
+            </li>
+            <li>
+              <label for="menuCheckbox"><a href="./faq.html">FAQ</a></label>
+            </li>
+            <li>
+              <label for="menuCheckbox"
+                ><a href="./contact.html">Contacto</a></label
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- END HAM MENU-->
+      <a id="scroll"></a>
+      <!-- Marcador para activar el target -->
+    </header>
+    <!-- END HEADER-->
+
+    <!--MAIN-->
+    <sec id="sectionCreate" class="section-create">
+      <div class="create__wrapper">
+        <h2 class="create__title section__title">1. Características</h2>
+        <p class="create__text section__text" style="text-align: justify">
+          Define los atributos esenciales del personaje, como habilidades,
+          rasgos físicos y ventajas especiales.
+        </p>
+        <form
+          id="createForm1"
+          action="#___donde va a ser enviado___"
+          method="get"
+          class="my-form"
+        >
+          <label class="form-label__text" for="createName">Nombre:</label>
+          <input
+            type="text"
+            id="createName"
+            name="createName"
+            autocomplete="given-name"
+            required
+            maxlength="16"
+          /><br />
+
+          <label class="form-label__text" for="createSurname">Apellidos:</label>
+          <input
+            type="text"
+            id="createSurname"
+            name="createSurname"
+            autocomplete="family-name"
+            required
+            maxlength="16"
+          /><br />
+
+          <label class="form-label__text" for="createJob">Profesión:</label>
+          <select id="createJob" name="createJob">
+            <option value="" disabled selected>Selecciona una profesión</option>
+            <option value="guerrero">Guerrero</option>
+            <option value="mago">Mago</option>
+            <option value="arquero">Arquero</option>
+            <option value="ladron">Ladrón</option>
+            <option value="sacerdote">Sacerdote</option>
+            <option value="herrero">Herrero</option>
+            <option value="alquimista">Alquimista</option>
+            <option value="mercenario">Mercenario</option>
+            <option value="explorador">Explorador</option>
+            <option value="bardo">Bardo</option></select
+          ><br />
+
+          <label class="form-label__text" for="edad"
+            >Fecha de nacimiento:</label
+          >
+          <input
+            type="date"
+            id="createDate"
+            name="createDate"
+            autocomplete="bday"
+            required
+          /><br />
+
+          <label class="form-label__text" for="height">Altura (cm):</label>
+          <input
+            type="number"
+            id="createHeight"
+            name="createHeight"
+            min="25"
+            max="250"
+            step="0.1"
+            maxlength="3"
+            required
+          /><br />
+
+          <label class="form-label__text" for="weight">Peso (Kg):</label>
+          <input
+            type="number"
+            id="createWeight"
+            name="createWeight"
+            min="20"
+            max="300"
+            maxlength="3"
+            step="0.1"
+            required
+          /><br />
+
+          <label class="form-label__text" for="createHair"
+            >Color de pelo:</label
+          >
+          <select id="createHair" name="createHair" required>
+            <option value="" disabled selected>Selecciona una profesión</option>
+            <!-- API --></select
+          ><br />
+
+          <label class="form-label__text" for="createGender">Género:</label>
+          <select id="createGender" name="createGender" required>
+            <option value="" disabled selected>Selecciona una profesión</option>
+            <!-- API --></select
+          ><br />
+        </form>
+      </div>
+      <div class="create__wrapper">
+        <h2 class="create__title section__title">2. Descripción</h2>
+        <p class="create__text section__text" style="text-align: justify">
+          Una breve narrativa sobre la personalidad, historia y motivaciones del
+          personaje.
+        </p>
+        <form
+          id="createForm2"
+          action="#___donde va a ser enviado___"
+          method="get"
+          class="my-form"
+        >
+          <label
+            id="descriptionSubtitle"
+            class="form-label__text"
+            for="description"
+            >Desarrolla la historia de
+            <p id="outputNameSurname"></p
+          ></label>
+          <textarea
+            placeholder="Max: 2.000 caracteres. Hace muchos años, en un pueblo olvidado entre montañas, nació Aldren, un joven herrero con el sueño de forjar la espada perfecta. Su vida cambió cuando encontró un antiguo mineral encantado en una cueva oculta..."
+            class="description__textarea"
+            id="createDescription"
+            name="createDescription"
+            rows="4"
+            cols="30"
+            style="max-height: 40rem; overflow-y: auto"
+            oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'"
+            maxlength="2000"
+            required
+          ></textarea
+          ><br />
+        </form>
+      </div>
+      <div class="create__wrapper">
+        <h2 class="create__title section__title">3. Render</h2>
+        <p class="create__text section__text" style="text-align: justify">
+          Representación visual del personaje, ya sea en forma de ilustración.
+        </p>
+        <button
+          id="createBtn"
+          type="button"
+          class="btn btn__yellow btn__max-width"
+          aria-label="Generar personaje."
+        >
+          Empezar a crear!
+        </button>
+
+        <!-- JAVASCRIPT-->
+
+        <div id="containerCard"></div>
+      </div>
+    </sec>
+
+    <!--END MAIN-->
+
+    <!-- FOOTER-->
+    <footer Id="footerPrincipal" class="footer-principal">
+      <div class="footer-principal__wrapper">
+        <div class="footer__description">
+          <h3 class="footer__title">Character creator</h3>
+          <h4 class="footer__subtitle">by Adrian Dader</h4>
+          <p class="footer__text">
+            Este generador de personajes ha sido desarrollado para facilitar la
+            creación de historias y personajes únicos. Diseñado para escritores,
+            jugadores de rol y creativos, permite construir cartas con
+            descripciones detalladas y un diseño atractivo.
+          </p>
+          <p class="footer__text">
+            Proyecto realizado para el centro de estudios
+            <span class="span-text__white">EBIS Business School</span>, con el
+            objetivo de fomentar la creatividad y la narrativa interactiva.
+          </p>
+        </div>
+        <div class="footer-links__wrapper">
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Servicios</h4>
+            <p>
+              <a href="" class="footer__text">Instalación y Configuración</a>
+            </p>
+            <p><a href="" class="footer__text">Desarrollo de Software</a></p>
+            <p>
+              <a href="" class="footer__text">Reparación de Dispositivos</a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Empresa</h4>
+            <p><a href="" class="footer__text">Nuestra Historia</a></p>
+            <p><a href="" class="footer__text">Equipo y Cultura</a></p>
+            <p><a href="" class="footer__text">Opiniones de Clientes</a></p>
+          </div>
+          <div class="footer-links">
+            <h4 class="footer__subtitle">Soporte</h4>
+            <p><a href="" class="footer__text">Centro de Ayuda</a></p>
+            <p><a href="" class="footer__text">Garantía y Devoluciones</a></p>
+            <p><a href="" class="footer__text">Seguridad y Privacidad </a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--END FOOTER-->
+    <!--SCRIPT-->
+    <script src="./../js/dist/create.js"></script>
+    <script src="./../js/dist/header_submenu.js"></script>
+  </body>
+</html>
